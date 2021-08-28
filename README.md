@@ -1,5 +1,5 @@
 # hotcuts
-Transform an input device into a shortcut board
+Transform an input device into a shortcut board. for example, a second keyboard with pictures on keys
 
 ## How does it work?
 
