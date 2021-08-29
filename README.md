@@ -3,14 +3,13 @@ Transform an input device into a shortcut board. for example, a second keyboard 
 
 ## How does it work?
 
-A main daemon (`rootDaemon.py`) running as root intercepts a keyboard device through its device file, acquiring a lock on it and preventing it from sending inputs to the X server.
+A main daemon (`hotcutdaemon.py`) running as root intercepts a keyboard device through its device file, acquiring a lock on it and preventing it from sending inputs to the X server.
 
-The key presses trigger commands by saving them to a file (`lastCommand`), and allowing the puppet process (`userpuppet.py`), which executes the commands and clears the cache file.
+The key presses trigger commands  as specified in the `config.ini` file
 
-The main daemon should be run as root (edit it accordingly to set your device path, edit the INI file according to your needs) and the puppet process should run in the current user.
+## Setup
 
-## WeewooWeewo, a process reading commands from a file?
-
-Yes, besides the daemon needs root to grab the device, so it is best to pass commands to a puppet process in the user, which is also useful because it executes other apps as a normal user.
-
-if you are concerned about a malicious actor editing the cache command file, be assured they could easily edit the daemon and the puppet too, or if anything the whole home and possibily `.bashrc`
+1. Locate the device file and edit `config.ini` by setting the device path and your shortcuts.
+2.  Determine your keyboards serial id (you may use,`sudo udevadm info -a -n {DEVICE_FILE}`) edit `udev/99-keyboard-shortcuts.rules` with it, while setting `OWNER={Your username}` and add said file to `/etc/udev/rules.d` to tell udev to allow your user to access the device file; restart udev with `sudo udevadm trigger`
+3. chmod +x `hotcutdaemon.py` with your user
+4. add `hotcutdaemon.py` to a crontab (or to your i3/wm config file) for automatic execution
