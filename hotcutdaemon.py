@@ -2,7 +2,7 @@
 from evdev import InputDevice, categorize, ecodes
 import configparser, os
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(os.path.dirname(os.path.realpath(__file__))+'/config.ini')
 def sysrun(command):
     os.system(command+ " &")
 dev = InputDevice(config["DEVICE"]["path"])
