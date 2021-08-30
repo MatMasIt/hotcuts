@@ -1,0 +1,57 @@
+
+╔═════════════════╦════════════════════════════════════╗
+║       Key       ║               Action               ║
+╠═════════════════╬════════════════════════════════════╣
+║ A               ║ Close selected (mouse) window      ║
+║ B               ║ Bluetooth Settings                 ║
+║ C               ║ Calculator                         ║
+║ E               ║ Exposè menu                        ║
+║ G               ║ Gedit                              ║
+║ H               ║ Help                               ║
+║ K               ║ Calendar                           ║
+║ M               ║ Rhytmbox                           ║
+║ Q               ║ Close active window                ║
+║ R               ║ Reboot                             ║
+║ S               ║ Settings                           ║
+║ T               ║ Clock                              ║
+║ V               ║ VsCode                             ║
+║ W               ║ Wifi Settings                      ║
+║ Z               ║ Files                              ║
+║ Enter           ║ Terminal                           ║
+║ Esc             ║ Lock screen                        ║
+║ 1               ║ Goto workspace 1                   ║
+║ 2               ║ Goto workspace 2                   ║
+║ 3               ║ Goto workspace 3                   ║
+║ 4               ║ Goto workspace 4                   ║
+║ 5               ║ Goto workspace 5                   ║
+║ 6               ║ Goto workspace 6                   ║
+║ 7               ║ Goto workspace 7                   ║
+║ 8               ║ Goto workspace 8                   ║
+║ 9               ║ Goto workspace 9                   ║
+║ 0               ║ Goto workspace 10                  ║
+║ Keypad 1        ║ Move active window to workspace 1  ║
+║ Keypad 2        ║ Move active window to workspace 2  ║
+║ Keypad 3        ║ Move active window to workspace 3  ║
+║ Keypad 4        ║ Move active window to workspace 4  ║
+║ Keypad 5        ║ Move active window to workspace 5  ║
+║ Keypad 6        ║ Move active window to workspace 6  ║
+║ Keypad 7        ║ Move active window to workspace 7  ║
+║ Keypad 8        ║ Move active window to workspace 8  ║
+║ Keypad 9        ║ Move active window to workspace 9  ║
+║ Keypad 0        ║ Move active window to workspace 10 ║
+║ Keypad plus     ║ Resize horizontally bigger         ║
+║ Keypad minus    ║ Resize horizontally smaller        ║
+║ Keypad asterisk ║ Resize vertically bigger           ║
+║ Keypad slash    ║ Resize vertically smaller          ║
+║ Up              ║ Select window up                   ║
+║ Down            ║ Select window down                 ║
+║ Left            ║ Select window left                 ║
+║ Right           ║ Select window right                ║
+║ End             ║ Escape key                         ║
+║ Comma           ║ Move up                            ║
+║ Dot             ║ Move down                          ║
+║ Slash           ║ Move left                          ║
+║ Right Alt       ║ Move right                         ║
+╚═════════════════╩════════════════════════════════════╝
+
+
