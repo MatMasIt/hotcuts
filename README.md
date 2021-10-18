@@ -1,4 +1,7 @@
 # hotcuts
+
+![GitHub](https://img.shields.io/github/license/MatMasIt/hotcuts)
+
 Transform an input device into a shortcut board. for example, a second keyboard with pictures on keys
 
 ## How does it work?
